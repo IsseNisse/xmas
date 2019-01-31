@@ -4,14 +4,35 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans" rel="stylesheet">
-	<link rel="icon" href="img/elficon.png">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather%7cMerriweather+Sans" rel="stylesheet">
+	<link rel="icon" href="img/elficonbigwhite.png">
 	<title>XMAS Company</title>
 </head>
 <body>
+	
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+	    document.getElementById("myBtn").style.display = "block";
+	  } else {
+	    document.getElementById("myBtn").style.display = "none";
+	  }
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+</script>
+
 	<nav>
 		<ul>
-			<li><img id="elf" src="img/elficon.png" alt="elf" style="max-width: 90px; max-height: 90px;"></li>
 			<li><a href="#section1">HOME</a></li>
 			<li><a href="#section2">KONTAKT</a></li>
 		</ul>
@@ -19,12 +40,17 @@
 
 	<section id="section1">
 		<h1>XMAS Company</h1>
+		<h2><img id="paket" src="img/smallpaket.png" alt="gift"> För en kul jul!</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earum doloremque, eos perferendis harum dolorum laudantium, alias reprehenderit odio, vitae rerum eaque! Minima, perferendis quasi nam fugiat eum unde modi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore ratione cum beatae facilis officia! Quasi voluptas, molestias, minus quo facere vero cum a cupiditate veritatis itaque reprehenderit aperiam illo beatae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia debitis praesentium eveniet recusandae similique quisquam vel repudiandae accusantium, suscipit tenetur eligendi voluptate saepe sapiente sequi tempora architecto necessitatibus fugit delectus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam sequi exercitationem consequatur soluta debitis laborum, reprehenderit amet necessitatibus! Vero ipsam deleniti cum doloribus, quaerat modi id recusandae, reiciendis officia explicabo.</p>
+		<img id="santa" src="img/santa.png" alt="Santa">
 	</section>
 
 	<section id="section2">
 		<h1>KONTAKT</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque tenetur, praesentium. Saepe, dolor. Quibusdam rerum culpa molestiae eligendi dolorem, sint odit et sunt, nostrum soluta, cumque quo rem quidem doloremque.</p>
+				<p>Telefon: 123-456-78-90</p>
+				<p>Mail: xmascompany@gamil.com</p>
+				<p>Adress: Rådhusesplanaden 2c</p>
+		<img id="knitting" src="img/smallknitting.png" alt="knitting icon">
 	</section>
 
 </body>
